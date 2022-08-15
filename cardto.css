@@ -5,16 +5,21 @@ body {
 }
 
 .frame {
+ 
   position: absolute;
   background-color: #201c29;
   top: 50%;
   left: 50%;
+
   width: 450px;
   height: 450px;
+  
   margin-top: -230px;
   margin-left: -230px;
+
   border-radius: 4px;
   box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.6);
+
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +29,7 @@ body {
 .card {
   display: -webkit-box;
   display: flex;
+
   -webkit-box-align: center;
           align-items: center;
   -webkit-box-pack: center;
@@ -32,9 +38,11 @@ body {
 
 .flip-me {
   position: absolute;
+
   top: 27%;
   left: 76%;
   font-size: 1.3rem;
+
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -42,9 +50,12 @@ body {
 .card {
   width: 80%;
   height: 40%;
+
   padding: 1rem;
+
   background: linear-gradient(178deg, #ef2f96, #ad2fed, #ad2fed, #d53070);
   background-size: 600% 600%;
+
   -webkit-animation: background 7s ease infinite;
           animation: background 7s ease infinite;
   -webkit-perspective: 800px;
@@ -54,6 +65,7 @@ body {
 .front h1 {
   font-family: Satisfy, cursive;
   font-size: 7rem;
+
   margin: 1rem 4rem;
   text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
@@ -63,6 +75,7 @@ h2,
 .fa-heart {
   background: linear-gradient(178deg, #ef2f96, #ad2fed, #ad2fed, #d53070);
   background-size: 600% 600%;
+
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -93,12 +106,14 @@ p {
   position: absolute;
   top: 60%;
   left: 10%;
+
   color: rgba(255, 255, 255, 0.2);
   padding: 0.8rem 0 0.2rem 0.5rem;
 }
 
 p:nth-of-type(2) {
   opacity: 0;
+  
   -webkit-transform: translate(-2rem);
           transform: translate(-2rem);
 }
@@ -111,6 +126,7 @@ p:nth-of-type(2) {
   content: "";
   position: absolute;
   border: 4px solid #ad2fed;
+
   top: -16px;
   right: -16px;
   bottom: -16px;
@@ -126,6 +142,7 @@ p:nth-of-type(2) {
   bottom: -8px;
   left: -8px;
   opacity: 1;
+
   -webkit-transform: rotate(135deg) scale(3);
           transform: rotate(135deg) scale(3);
   -webkit-transition: 0.3s;
@@ -151,6 +168,7 @@ p:nth-of-type(2) {
 .back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -160,12 +178,14 @@ p:nth-of-type(2) {
 .card .back {
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
+
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .back {
+
   letter-spacing: 2px;
   text-align: center;
 }
@@ -217,6 +237,7 @@ p:nth-of-type(2) {
 .line-1,
 .line-2 {
   left: 82.5%;
+
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   background: rgb(233, 93, 233);
@@ -226,6 +247,7 @@ p:nth-of-type(2) {
 .line-3 {
   top: 45%;
   left: 50%;
+  
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
